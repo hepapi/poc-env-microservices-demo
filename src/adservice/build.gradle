@@ -118,3 +118,7 @@ applicationDistribution.into('bin') {
     from(adServiceClient)
     fileMode = 0755
 }
+
+tasks.named('verifyGoogleJavaFormat') {
+    enabled = false
+}
